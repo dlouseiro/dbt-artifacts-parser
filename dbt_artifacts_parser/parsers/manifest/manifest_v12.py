@@ -27,7 +27,7 @@ class Metadata(BaseParserModel):
         extra='forbid',
     )
     dbt_schema_version: Optional[str] = None
-    dbt_version: Optional[str] = '1.10.8'
+    dbt_version: Optional[str] = '1.10.0b3'
     generated_at: Optional[str] = None
     invocation_id: Optional[str] = None
     invocation_started_at: Optional[str] = None
@@ -723,31 +723,31 @@ class Access(Enum):
     public = 'public'
 
 
+class UpdatesOn(Enum):
+    all = 'all'
+    any = 'any'
+
+
 class Period(Enum):
     minute = 'minute'
     hour = 'hour'
     day = 'day'
 
 
-class UpdatesOn(Enum):
-    all = 'all'
-    any = 'any'
-
-
 class BuildAfter(BaseParserModel):
     model_config = ConfigDict(
         extra='allow',
     )
-    count: int
-    period: Period
     updates_on: Optional[UpdatesOn] = 'any'
+    count: Optional[int] = 0
+    period: Optional[Period] = 'hour'
 
 
 class Freshness(BaseParserModel):
     model_config = ConfigDict(
         extra='allow',
     )
-    build_after: BuildAfter = Field(..., title='ModelBuildAfter')
+    build_after: Optional[BuildAfter] = Field(None, title='ModelBuildAfter')
 
 
 class Config9(BaseParserModel):
@@ -923,6 +923,22 @@ class TimeSpine(BaseParserModel):
     custom_granularities: Optional[List[CustomGranularity]] = None
 
 
+class BuildAfter1(BaseParserModel):
+    model_config = ConfigDict(
+        extra='allow',
+    )
+    updates_on: Optional[UpdatesOn] = 'any'
+    count: Optional[int] = 0
+    period: Optional[Period] = 'hour'
+
+
+class Freshness1(BaseParserModel):
+    model_config = ConfigDict(
+        extra='allow',
+    )
+    build_after: Optional[BuildAfter1] = Field(None, title='ModelBuildAfter')
+
+
 class Nodes4(BaseParserModel):
     model_config = ConfigDict(
         extra='forbid',
@@ -974,6 +990,7 @@ class Nodes4(BaseParserModel):
     defer_relation: Optional[DeferRelation1] = None
     primary_key: Optional[List[str]] = None
     time_spine: Optional[TimeSpine] = None
+    freshness: Optional[Freshness1] = None
 
 
 class Config12(BaseParserModel):
@@ -1456,7 +1473,7 @@ class ErrorAfter(BaseParserModel):
     period: Optional[Period] = None
 
 
-class Freshness1(BaseParserModel):
+class Freshness2(BaseParserModel):
     model_config = ConfigDict(
         extra='forbid',
     )
@@ -1543,7 +1560,7 @@ class ErrorAfter1(BaseParserModel):
     period: Optional[Period] = None
 
 
-class Freshness2(BaseParserModel):
+class Freshness3(BaseParserModel):
     model_config = ConfigDict(
         extra='forbid',
     )
@@ -1559,11 +1576,7 @@ class Config20(BaseParserModel):
     field_extra: Optional[Dict[str, Any]] = Field(None, alias='_extra')
     enabled: Optional[bool] = True
     event_time: Optional[Any] = None
-    freshness: Optional[Freshness2] = None
-    loaded_at_field: Optional[str] = None
-    loaded_at_query: Optional[str] = None
-    meta: Optional[Dict[str, Any]] = None
-    tags: Optional[List[str]] = None
+    freshness: Optional[Freshness3] = None
 
 
 class Sources(BaseParserModel):
@@ -1586,7 +1599,7 @@ class Sources(BaseParserModel):
     quoting: Optional[Quoting] = Field(None, title='Quoting')
     loaded_at_field: Optional[str] = None
     loaded_at_query: Optional[str] = None
-    freshness: Optional[Freshness1] = None
+    freshness: Optional[Freshness2] = None
     external: Optional[External] = None
     description: Optional[str] = ''
     columns: Optional[Dict[str, Columns8]] = None
@@ -2616,20 +2629,20 @@ class Contract23(BaseParserModel):
     alias_types: Optional[bool] = True
 
 
-class BuildAfter1(BaseParserModel):
+class BuildAfter2(BaseParserModel):
     model_config = ConfigDict(
         extra='allow',
     )
-    count: int
-    period: Period
     updates_on: Optional[UpdatesOn] = 'any'
+    count: Optional[int] = 0
+    period: Optional[Period] = 'hour'
 
 
-class Freshness3(BaseParserModel):
+class Freshness4(BaseParserModel):
     model_config = ConfigDict(
         extra='allow',
     )
-    build_after: BuildAfter1 = Field(..., title='ModelBuildAfter')
+    build_after: Optional[BuildAfter2] = Field(None, title='ModelBuildAfter')
 
 
 class Config33(BaseParserModel):
@@ -2665,7 +2678,7 @@ class Config33(BaseParserModel):
     event_time: Optional[Any] = None
     concurrent_batches: Optional[Any] = None
     access: Optional[Access] = 'protected'
-    freshness: Optional[Freshness3] = None
+    freshness: Optional[Freshness4] = None
 
 
 class Constraint14(BaseParserModel):
@@ -2797,6 +2810,22 @@ class TimeSpine1(BaseParserModel):
     custom_granularities: Optional[List[CustomGranularity]] = None
 
 
+class BuildAfter3(BaseParserModel):
+    model_config = ConfigDict(
+        extra='allow',
+    )
+    updates_on: Optional[UpdatesOn] = 'any'
+    count: Optional[int] = 0
+    period: Optional[Period] = 'hour'
+
+
+class Freshness5(BaseParserModel):
+    model_config = ConfigDict(
+        extra='allow',
+    )
+    build_after: Optional[BuildAfter3] = Field(None, title='ModelBuildAfter')
+
+
 class Disabled4(BaseParserModel):
     model_config = ConfigDict(
         extra='forbid',
@@ -2848,6 +2877,7 @@ class Disabled4(BaseParserModel):
     defer_relation: Optional[DeferRelation4] = None
     primary_key: Optional[List[str]] = None
     time_spine: Optional[TimeSpine1] = None
+    freshness: Optional[Freshness5] = None
 
 
 class Config36(BaseParserModel):
@@ -3310,7 +3340,7 @@ class ErrorAfter2(BaseParserModel):
     period: Optional[Period] = None
 
 
-class Freshness4(BaseParserModel):
+class Freshness6(BaseParserModel):
     model_config = ConfigDict(
         extra='forbid',
     )
@@ -3386,7 +3416,7 @@ class ErrorAfter3(BaseParserModel):
     period: Optional[Period] = None
 
 
-class Freshness5(BaseParserModel):
+class Freshness7(BaseParserModel):
     model_config = ConfigDict(
         extra='forbid',
     )
@@ -3402,11 +3432,7 @@ class Config44(BaseParserModel):
     field_extra: Optional[Dict[str, Any]] = Field(None, alias='_extra')
     enabled: Optional[bool] = True
     event_time: Optional[Any] = None
-    freshness: Optional[Freshness5] = None
-    loaded_at_field: Optional[str] = None
-    loaded_at_query: Optional[str] = None
-    meta: Optional[Dict[str, Any]] = None
-    tags: Optional[List[str]] = None
+    freshness: Optional[Freshness7] = None
 
 
 class Disabled8(BaseParserModel):
@@ -3429,7 +3455,7 @@ class Disabled8(BaseParserModel):
     quoting: Optional[Quoting] = Field(None, title='Quoting')
     loaded_at_field: Optional[str] = None
     loaded_at_query: Optional[str] = None
-    freshness: Optional[Freshness4] = None
+    freshness: Optional[Freshness6] = None
     external: Optional[External1] = None
     description: Optional[str] = ''
     columns: Optional[Dict[str, Columns17]] = None
