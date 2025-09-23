@@ -4369,7 +4369,7 @@ class UnitTests(BaseParserModel):
     version: Optional[Union[str, float]] = None
 
 
-class Manifestv12(BaseParserModel):
+class ManifestV12(BaseParserModel):
     model_config = ConfigDict(
         extra='forbid',
     )
