@@ -13,7 +13,7 @@
         },
         "dbt_version": {
           "type": "string",
-          "default": "1.10.0b3"
+          "default": "1.10.8"
         },
         "generated_at": {
           "type": "string"
@@ -231,7 +231,10 @@
                   }
                 },
                 "additionalProperties": false,
-                "required": ["name", "checksum"]
+                "required": [
+                  "name",
+                  "checksum"
+                ]
               },
               "config": {
                 "type": "object",
@@ -366,7 +369,9 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["sql"]
+                      "required": [
+                        "sql"
+                      ]
                     }
                   },
                   "pre-hook": {
@@ -395,7 +400,9 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["sql"]
+                      "required": [
+                        "sql"
+                      ]
                     }
                   },
                   "quoting": {
@@ -450,7 +457,11 @@
                     "default": "ignore"
                   },
                   "on_configuration_change": {
-                    "enum": ["apply", "continue", "fail"]
+                    "enum": [
+                      "apply",
+                      "continue",
+                      "fail"
+                    ]
                   },
                   "grants": {
                     "type": "object",
@@ -630,7 +641,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["type"]
+                        "required": [
+                          "type"
+                        ]
                       }
                     },
                     "quote": {
@@ -712,7 +725,9 @@
                     }
                   },
                   "additionalProperties": true,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 },
                 "propertyNames": {
                   "type": "string"
@@ -1062,7 +1077,9 @@
                                     }
                                   },
                                   "additionalProperties": false,
-                                  "required": ["sql"]
+                                  "required": [
+                                    "sql"
+                                  ]
                                 }
                               },
                               "pre-hook": {
@@ -1091,7 +1108,9 @@
                                     }
                                   },
                                   "additionalProperties": false,
-                                  "required": ["sql"]
+                                  "required": [
+                                    "sql"
+                                  ]
                                 }
                               },
                               "quoting": {
@@ -1146,7 +1165,11 @@
                                 "default": "ignore"
                               },
                               "on_configuration_change": {
-                                "enum": ["apply", "continue", "fail"]
+                                "enum": [
+                                  "apply",
+                                  "continue",
+                                  "fail"
+                                ]
                               },
                               "grants": {
                                 "type": "object",
@@ -1305,7 +1328,10 @@
                   }
                 },
                 "additionalProperties": false,
-                "required": ["name", "checksum"]
+                "required": [
+                  "name",
+                  "checksum"
+                ]
               },
               "config": {
                 "type": "object",
@@ -1440,7 +1466,9 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["sql"]
+                      "required": [
+                        "sql"
+                      ]
                     }
                   },
                   "pre-hook": {
@@ -1469,7 +1497,9 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["sql"]
+                      "required": [
+                        "sql"
+                      ]
                     }
                   },
                   "quoting": {
@@ -1524,7 +1554,11 @@
                     "default": "ignore"
                   },
                   "on_configuration_change": {
-                    "enum": ["apply", "continue", "fail"]
+                    "enum": [
+                      "apply",
+                      "continue",
+                      "fail"
+                    ]
                   },
                   "grants": {
                     "type": "object",
@@ -1689,7 +1723,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["type"]
+                        "required": [
+                          "type"
+                        ]
                       }
                     },
                     "quote": {
@@ -1771,7 +1807,9 @@
                     }
                   },
                   "additionalProperties": true,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 },
                 "propertyNames": {
                   "type": "string"
@@ -1920,7 +1958,9 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 }
               },
               "sources": {
@@ -2004,7 +2044,10 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["id", "sql"]
+                  "required": [
+                    "id",
+                    "sql"
+                  ]
                 }
               },
               "_pre_injected_sql": {
@@ -2116,7 +2159,10 @@
                   }
                 },
                 "additionalProperties": false,
-                "required": ["name", "checksum"]
+                "required": [
+                  "name",
+                  "checksum"
+                ]
               },
               "config": {
                 "type": "object",
@@ -2368,7 +2414,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["type"]
+                        "required": [
+                          "type"
+                        ]
                       }
                     },
                     "quote": {
@@ -2450,7 +2498,9 @@
                     }
                   },
                   "additionalProperties": true,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 },
                 "propertyNames": {
                   "type": "string"
@@ -2599,7 +2649,9 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 }
               },
               "sources": {
@@ -2683,7 +2735,10 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["id", "sql"]
+                  "required": [
+                    "id",
+                    "sql"
+                  ]
                 }
               },
               "_pre_injected_sql": {
@@ -2795,7 +2850,10 @@
                   }
                 },
                 "additionalProperties": false,
-                "required": ["name", "checksum"]
+                "required": [
+                  "name",
+                  "checksum"
+                ]
               },
               "config": {
                 "type": "object",
@@ -2930,7 +2988,9 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["sql"]
+                      "required": [
+                        "sql"
+                      ]
                     }
                   },
                   "pre-hook": {
@@ -2959,7 +3019,9 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["sql"]
+                      "required": [
+                        "sql"
+                      ]
                     }
                   },
                   "quoting": {
@@ -3014,7 +3076,11 @@
                     "default": "ignore"
                   },
                   "on_configuration_change": {
-                    "enum": ["apply", "continue", "fail"]
+                    "enum": [
+                      "apply",
+                      "continue",
+                      "fail"
+                    ]
                   },
                   "grants": {
                     "type": "object",
@@ -3179,7 +3245,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["type"]
+                        "required": [
+                          "type"
+                        ]
                       }
                     },
                     "quote": {
@@ -3261,7 +3329,9 @@
                     }
                   },
                   "additionalProperties": true,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 },
                 "propertyNames": {
                   "type": "string"
@@ -3410,7 +3480,9 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 }
               },
               "sources": {
@@ -3494,7 +3566,10 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["id", "sql"]
+                  "required": [
+                    "id",
+                    "sql"
+                  ]
                 }
               },
               "_pre_injected_sql": {
@@ -3617,7 +3692,10 @@
                   }
                 },
                 "additionalProperties": false,
-                "required": ["name", "checksum"]
+                "required": [
+                  "name",
+                  "checksum"
+                ]
               },
               "config": {
                 "type": "object",
@@ -3752,7 +3830,9 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["sql"]
+                      "required": [
+                        "sql"
+                      ]
                     }
                   },
                   "pre-hook": {
@@ -3781,7 +3861,9 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["sql"]
+                      "required": [
+                        "sql"
+                      ]
                     }
                   },
                   "quoting": {
@@ -3836,7 +3918,11 @@
                     "default": "ignore"
                   },
                   "on_configuration_change": {
-                    "enum": ["apply", "continue", "fail"]
+                    "enum": [
+                      "apply",
+                      "continue",
+                      "fail"
+                    ]
                   },
                   "grants": {
                     "type": "object",
@@ -3894,7 +3980,11 @@
                     "default": null
                   },
                   "access": {
-                    "enum": ["private", "protected", "public"],
+                    "enum": [
+                      "private",
+                      "protected",
+                      "public"
+                    ],
                     "default": "protected"
                   },
                   "freshness": {
@@ -3907,23 +3997,35 @@
                             "type": "object",
                             "title": "ModelBuildAfter",
                             "properties": {
-                              "updates_on": {
-                                "enum": ["all", "any"],
-                                "default": "any"
-                              },
                               "count": {
-                                "type": "integer",
-                                "default": 0
+                                "type": "integer"
                               },
                               "period": {
-                                "enum": ["minute", "hour", "day"],
-                                "default": "hour"
+                                "enum": [
+                                  "minute",
+                                  "hour",
+                                  "day"
+                                ]
+                              },
+                              "updates_on": {
+                                "enum": [
+                                  "all",
+                                  "any"
+                                ],
+                                "default": "any"
                               }
                             },
-                            "additionalProperties": true
+                            "additionalProperties": true,
+                            "required": [
+                              "count",
+                              "period"
+                            ]
                           }
                         },
-                        "additionalProperties": true
+                        "additionalProperties": true,
+                        "required": [
+                          "build_after"
+                        ]
                       },
                       {
                         "type": "null"
@@ -4039,7 +4141,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["type"]
+                        "required": [
+                          "type"
+                        ]
                       }
                     },
                     "quote": {
@@ -4121,7 +4225,9 @@
                     }
                   },
                   "additionalProperties": true,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 },
                 "propertyNames": {
                   "type": "string"
@@ -4270,7 +4376,9 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 }
               },
               "sources": {
@@ -4354,7 +4462,10 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["id", "sql"]
+                  "required": [
+                    "id",
+                    "sql"
+                  ]
                 }
               },
               "_pre_injected_sql": {
@@ -4395,7 +4506,11 @@
                 "additionalProperties": false
               },
               "access": {
-                "enum": ["private", "protected", "public"],
+                "enum": [
+                  "private",
+                  "protected",
+                  "public"
+                ],
                 "default": "protected"
               },
               "constraints": {
@@ -4469,7 +4584,9 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["type"]
+                  "required": [
+                    "type"
+                  ]
                 }
               },
               "version": {
@@ -4728,7 +4845,9 @@
                                     }
                                   },
                                   "additionalProperties": false,
-                                  "required": ["sql"]
+                                  "required": [
+                                    "sql"
+                                  ]
                                 }
                               },
                               "pre-hook": {
@@ -4757,7 +4876,9 @@
                                     }
                                   },
                                   "additionalProperties": false,
-                                  "required": ["sql"]
+                                  "required": [
+                                    "sql"
+                                  ]
                                 }
                               },
                               "quoting": {
@@ -4812,7 +4933,11 @@
                                 "default": "ignore"
                               },
                               "on_configuration_change": {
-                                "enum": ["apply", "continue", "fail"]
+                                "enum": [
+                                  "apply",
+                                  "continue",
+                                  "fail"
+                                ]
                               },
                               "grants": {
                                 "type": "object",
@@ -4936,46 +5061,16 @@
                             }
                           },
                           "additionalProperties": false,
-                          "required": ["name"]
+                          "required": [
+                            "name"
+                          ]
                         }
                       }
                     },
                     "additionalProperties": false,
-                    "required": ["standard_granularity_column"]
-                  },
-                  {
-                    "type": "null"
-                  }
-                ],
-                "default": null
-              },
-              "freshness": {
-                "anyOf": [
-                  {
-                    "type": "object",
-                    "title": "ModelFreshness",
-                    "properties": {
-                      "build_after": {
-                        "type": "object",
-                        "title": "ModelBuildAfter",
-                        "properties": {
-                          "updates_on": {
-                            "enum": ["all", "any"],
-                            "default": "any"
-                          },
-                          "count": {
-                            "type": "integer",
-                            "default": 0
-                          },
-                          "period": {
-                            "enum": ["minute", "hour", "day"],
-                            "default": "hour"
-                          }
-                        },
-                        "additionalProperties": true
-                      }
-                    },
-                    "additionalProperties": true
+                    "required": [
+                      "standard_granularity_column"
+                    ]
                   },
                   {
                     "type": "null"
@@ -5055,7 +5150,10 @@
                   }
                 },
                 "additionalProperties": false,
-                "required": ["name", "checksum"]
+                "required": [
+                  "name",
+                  "checksum"
+                ]
               },
               "config": {
                 "type": "object",
@@ -5190,7 +5288,9 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["sql"]
+                      "required": [
+                        "sql"
+                      ]
                     }
                   },
                   "pre-hook": {
@@ -5219,7 +5319,9 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["sql"]
+                      "required": [
+                        "sql"
+                      ]
                     }
                   },
                   "quoting": {
@@ -5274,7 +5376,11 @@
                     "default": "ignore"
                   },
                   "on_configuration_change": {
-                    "enum": ["apply", "continue", "fail"]
+                    "enum": [
+                      "apply",
+                      "continue",
+                      "fail"
+                    ]
                   },
                   "grants": {
                     "type": "object",
@@ -5439,7 +5545,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["type"]
+                        "required": [
+                          "type"
+                        ]
                       }
                     },
                     "quote": {
@@ -5521,7 +5629,9 @@
                     }
                   },
                   "additionalProperties": true,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 },
                 "propertyNames": {
                   "type": "string"
@@ -5670,7 +5780,9 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 }
               },
               "sources": {
@@ -5754,7 +5866,10 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["id", "sql"]
+                  "required": [
+                    "id",
+                    "sql"
+                  ]
                 }
               },
               "_pre_injected_sql": {
@@ -5866,7 +5981,10 @@
                   }
                 },
                 "additionalProperties": false,
-                "required": ["name", "checksum"]
+                "required": [
+                  "name",
+                  "checksum"
+                ]
               },
               "config": {
                 "type": "object",
@@ -6118,7 +6236,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["type"]
+                        "required": [
+                          "type"
+                        ]
                       }
                     },
                     "quote": {
@@ -6200,7 +6320,9 @@
                     }
                   },
                   "additionalProperties": true,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 },
                 "propertyNames": {
                   "type": "string"
@@ -6349,7 +6471,9 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 }
               },
               "sources": {
@@ -6433,7 +6557,10 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["id", "sql"]
+                  "required": [
+                    "id",
+                    "sql"
+                  ]
                 }
               },
               "_pre_injected_sql": {
@@ -6606,7 +6733,10 @@
                   }
                 },
                 "additionalProperties": false,
-                "required": ["name", "checksum"]
+                "required": [
+                  "name",
+                  "checksum"
+                ]
               },
               "config": {
                 "type": "object",
@@ -6741,7 +6871,9 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["sql"]
+                      "required": [
+                        "sql"
+                      ]
                     }
                   },
                   "pre-hook": {
@@ -6770,7 +6902,9 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["sql"]
+                      "required": [
+                        "sql"
+                      ]
                     }
                   },
                   "quoting": {
@@ -6825,7 +6959,11 @@
                     "default": "ignore"
                   },
                   "on_configuration_change": {
-                    "enum": ["apply", "continue", "fail"]
+                    "enum": [
+                      "apply",
+                      "continue",
+                      "fail"
+                    ]
                   },
                   "grants": {
                     "type": "object",
@@ -7124,7 +7262,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["type"]
+                        "required": [
+                          "type"
+                        ]
                       }
                     },
                     "quote": {
@@ -7206,7 +7346,9 @@
                     }
                   },
                   "additionalProperties": true,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 },
                 "propertyNames": {
                   "type": "string"
@@ -7355,7 +7497,9 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 }
               },
               "sources": {
@@ -7439,7 +7583,10 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["id", "sql"]
+                  "required": [
+                    "id",
+                    "sql"
+                  ]
                 }
               },
               "_pre_injected_sql": {
@@ -7696,7 +7843,9 @@
                                     }
                                   },
                                   "additionalProperties": false,
-                                  "required": ["sql"]
+                                  "required": [
+                                    "sql"
+                                  ]
                                 }
                               },
                               "pre-hook": {
@@ -7725,7 +7874,9 @@
                                     }
                                   },
                                   "additionalProperties": false,
-                                  "required": ["sql"]
+                                  "required": [
+                                    "sql"
+                                  ]
                                 }
                               },
                               "quoting": {
@@ -7780,7 +7931,11 @@
                                 "default": "ignore"
                               },
                               "on_configuration_change": {
-                                "enum": ["apply", "continue", "fail"]
+                                "enum": [
+                                  "apply",
+                                  "continue",
+                                  "fail"
+                                ]
                               },
                               "grants": {
                                 "type": "object",
@@ -8045,7 +8200,11 @@
                           "period": {
                             "anyOf": [
                               {
-                                "enum": ["minute", "hour", "day"]
+                                "enum": [
+                                  "minute",
+                                  "hour",
+                                  "day"
+                                ]
                               },
                               {
                                 "type": "null"
@@ -8081,7 +8240,11 @@
                           "period": {
                             "anyOf": [
                               {
-                                "enum": ["minute", "hour", "day"]
+                                "enum": [
+                                  "minute",
+                                  "hour",
+                                  "day"
+                                ]
                               },
                               {
                                 "type": "null"
@@ -8329,7 +8492,9 @@
                       }
                     },
                     "additionalProperties": false,
-                    "required": ["type"]
+                    "required": [
+                      "type"
+                    ]
                   }
                 },
                 "quote": {
@@ -8411,7 +8576,9 @@
                 }
               },
               "additionalProperties": true,
-              "required": ["name"]
+              "required": [
+                "name"
+              ]
             },
             "propertyNames": {
               "type": "string"
@@ -8478,7 +8645,11 @@
                               "period": {
                                 "anyOf": [
                                   {
-                                    "enum": ["minute", "hour", "day"]
+                                    "enum": [
+                                      "minute",
+                                      "hour",
+                                      "day"
+                                    ]
                                   },
                                   {
                                     "type": "null"
@@ -8514,7 +8685,11 @@
                               "period": {
                                 "anyOf": [
                                   {
-                                    "enum": ["minute", "hour", "day"]
+                                    "enum": [
+                                      "minute",
+                                      "hour",
+                                      "day"
+                                    ]
                                   },
                                   {
                                     "type": "null"
@@ -8547,8 +8722,41 @@
                   {
                     "type": "null"
                   }
+                ]
+              },
+              "loaded_at_field": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
                 ],
                 "default": null
+              },
+              "loaded_at_query": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "default": null
+              },
+              "meta": {
+                "type": "object",
+                "propertyNames": {
+                  "type": "string"
+                }
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             },
             "additionalProperties": true
@@ -8744,7 +8952,9 @@
                 }
               },
               "additionalProperties": false,
-              "required": ["name"]
+              "required": [
+                "name"
+              ]
             }
           },
           "created_at": {
@@ -8755,7 +8965,10 @@
               {
                 "type": "array",
                 "items": {
-                  "enum": ["python", "sql"]
+                  "enum": [
+                    "python",
+                    "sql"
+                  ]
                 }
               },
               {
@@ -8856,7 +9069,13 @@
             }
           },
           "type": {
-            "enum": ["dashboard", "notebook", "analysis", "ml", "application"]
+            "enum": [
+              "dashboard",
+              "notebook",
+              "analysis",
+              "ml",
+              "application"
+            ]
           },
           "owner": {
             "type": "object",
@@ -8917,7 +9136,11 @@
           "maturity": {
             "anyOf": [
               {
-                "enum": ["low", "medium", "high"]
+                "enum": [
+                  "low",
+                  "medium",
+                  "high"
+                ]
               },
               {
                 "type": "null"
@@ -9038,7 +9261,9 @@
                 }
               },
               "additionalProperties": false,
-              "required": ["name"]
+              "required": [
+                "name"
+              ]
             }
           },
           "sources": {
@@ -9118,7 +9343,13 @@
             "type": "string"
           },
           "type": {
-            "enum": ["simple", "ratio", "cumulative", "derived", "conversion"]
+            "enum": [
+              "simple",
+              "ratio",
+              "cumulative",
+              "derived",
+              "conversion"
+            ]
           },
           "type_params": {
             "type": "object",
@@ -9150,12 +9381,16 @@
                                     }
                                   },
                                   "additionalProperties": false,
-                                  "required": ["where_sql_template"]
+                                  "required": [
+                                    "where_sql_template"
+                                  ]
                                 }
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["where_filters"]
+                            "required": [
+                              "where_filters"
+                            ]
                           },
                           {
                             "type": "null"
@@ -9191,7 +9426,9 @@
                       }
                     },
                     "additionalProperties": false,
-                    "required": ["name"]
+                    "required": [
+                      "name"
+                    ]
                   },
                   {
                     "type": "null"
@@ -9225,12 +9462,16 @@
                                   }
                                 },
                                 "additionalProperties": false,
-                                "required": ["where_sql_template"]
+                                "required": [
+                                  "where_sql_template"
+                                ]
                               }
                             }
                           },
                           "additionalProperties": false,
-                          "required": ["where_filters"]
+                          "required": [
+                            "where_filters"
+                          ]
                         },
                         {
                           "type": "null"
@@ -9266,7 +9507,9 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["name"]
+                  "required": [
+                    "name"
+                  ]
                 }
               },
               "numerator": {
@@ -9295,12 +9538,16 @@
                                     }
                                   },
                                   "additionalProperties": false,
-                                  "required": ["where_sql_template"]
+                                  "required": [
+                                    "where_sql_template"
+                                  ]
                                 }
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["where_filters"]
+                            "required": [
+                              "where_filters"
+                            ]
                           },
                           {
                             "type": "null"
@@ -9333,7 +9580,10 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["count", "granularity"]
+                            "required": [
+                              "count",
+                              "granularity"
+                            ]
                           },
                           {
                             "type": "null"
@@ -9354,7 +9604,9 @@
                       }
                     },
                     "additionalProperties": false,
-                    "required": ["name"]
+                    "required": [
+                      "name"
+                    ]
                   },
                   {
                     "type": "null"
@@ -9388,12 +9640,16 @@
                                     }
                                   },
                                   "additionalProperties": false,
-                                  "required": ["where_sql_template"]
+                                  "required": [
+                                    "where_sql_template"
+                                  ]
                                 }
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["where_filters"]
+                            "required": [
+                              "where_filters"
+                            ]
                           },
                           {
                             "type": "null"
@@ -9426,7 +9682,10 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["count", "granularity"]
+                            "required": [
+                              "count",
+                              "granularity"
+                            ]
                           },
                           {
                             "type": "null"
@@ -9447,7 +9706,9 @@
                       }
                     },
                     "additionalProperties": false,
-                    "required": ["name"]
+                    "required": [
+                      "name"
+                    ]
                   },
                   {
                     "type": "null"
@@ -9480,7 +9741,10 @@
                       }
                     },
                     "additionalProperties": false,
-                    "required": ["count", "granularity"]
+                    "required": [
+                      "count",
+                      "granularity"
+                    ]
                   },
                   {
                     "type": "null"
@@ -9539,12 +9803,16 @@
                                       }
                                     },
                                     "additionalProperties": false,
-                                    "required": ["where_sql_template"]
+                                    "required": [
+                                      "where_sql_template"
+                                    ]
                                   }
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["where_filters"]
+                              "required": [
+                                "where_filters"
+                              ]
                             },
                             {
                               "type": "null"
@@ -9577,7 +9845,10 @@
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["count", "granularity"]
+                              "required": [
+                                "count",
+                                "granularity"
+                              ]
                             },
                             {
                               "type": "null"
@@ -9598,7 +9869,9 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["name"]
+                      "required": [
+                        "name"
+                      ]
                     }
                   },
                   {
@@ -9637,12 +9910,16 @@
                                         }
                                       },
                                       "additionalProperties": false,
-                                      "required": ["where_sql_template"]
+                                      "required": [
+                                        "where_sql_template"
+                                      ]
                                     }
                                   }
                                 },
                                 "additionalProperties": false,
-                                "required": ["where_filters"]
+                                "required": [
+                                  "where_filters"
+                                ]
                               },
                               {
                                 "type": "null"
@@ -9678,7 +9955,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       },
                       "conversion_measure": {
                         "type": "object",
@@ -9704,12 +9983,16 @@
                                         }
                                       },
                                       "additionalProperties": false,
-                                      "required": ["where_sql_template"]
+                                      "required": [
+                                        "where_sql_template"
+                                      ]
                                     }
                                   }
                                 },
                                 "additionalProperties": false,
-                                "required": ["where_filters"]
+                                "required": [
+                                  "where_filters"
+                                ]
                               },
                               {
                                 "type": "null"
@@ -9745,13 +10028,18 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       },
                       "entity": {
                         "type": "string"
                       },
                       "calculation": {
-                        "enum": ["conversions", "conversion_rate"],
+                        "enum": [
+                          "conversions",
+                          "conversion_rate"
+                        ],
                         "default": "conversion_rate"
                       },
                       "window": {
@@ -9768,7 +10056,10 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["count", "granularity"]
+                            "required": [
+                              "count",
+                              "granularity"
+                            ]
                           },
                           {
                             "type": "null"
@@ -9806,7 +10097,11 @@
                       }
                     },
                     "additionalProperties": false,
-                    "required": ["base_measure", "conversion_measure", "entity"]
+                    "required": [
+                      "base_measure",
+                      "conversion_measure",
+                      "entity"
+                    ]
                   },
                   {
                     "type": "null"
@@ -9834,7 +10129,10 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["count", "granularity"]
+                            "required": [
+                              "count",
+                              "granularity"
+                            ]
                           },
                           {
                             "type": "null"
@@ -9854,7 +10152,11 @@
                         "default": null
                       },
                       "period_agg": {
-                        "enum": ["first", "last", "average"],
+                        "enum": [
+                          "first",
+                          "last",
+                          "average"
+                        ],
                         "default": "first"
                       }
                     },
@@ -9886,12 +10188,16 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["where_sql_template"]
+                      "required": [
+                        "where_sql_template"
+                      ]
                     }
                   }
                 },
                 "additionalProperties": false,
-                "required": ["where_filters"]
+                "required": [
+                  "where_filters"
+                ]
               },
               {
                 "type": "null"
@@ -9935,7 +10241,10 @@
                   }
                 },
                 "additionalProperties": false,
-                "required": ["repo_file_path", "file_slice"]
+                "required": [
+                  "repo_file_path",
+                  "file_slice"
+                ]
               },
               {
                 "type": "null"
@@ -10070,7 +10379,9 @@
                 }
               },
               "additionalProperties": false,
-              "required": ["name"]
+              "required": [
+                "name"
+              ]
             }
           },
           "metrics": {
@@ -10300,7 +10611,10 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["name", "checksum"]
+                      "required": [
+                        "name",
+                        "checksum"
+                      ]
                     },
                     "config": {
                       "type": "object",
@@ -10435,7 +10749,9 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["sql"]
+                            "required": [
+                              "sql"
+                            ]
                           }
                         },
                         "pre-hook": {
@@ -10464,7 +10780,9 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["sql"]
+                            "required": [
+                              "sql"
+                            ]
                           }
                         },
                         "quoting": {
@@ -10519,7 +10837,11 @@
                           "default": "ignore"
                         },
                         "on_configuration_change": {
-                          "enum": ["apply", "continue", "fail"]
+                          "enum": [
+                            "apply",
+                            "continue",
+                            "fail"
+                          ]
                         },
                         "grants": {
                           "type": "object",
@@ -10699,7 +11021,9 @@
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["type"]
+                              "required": [
+                                "type"
+                              ]
                             }
                           },
                           "quote": {
@@ -10781,7 +11105,9 @@
                           }
                         },
                         "additionalProperties": true,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       },
                       "propertyNames": {
                         "type": "string"
@@ -11131,7 +11457,9 @@
                                           }
                                         },
                                         "additionalProperties": false,
-                                        "required": ["sql"]
+                                        "required": [
+                                          "sql"
+                                        ]
                                       }
                                     },
                                     "pre-hook": {
@@ -11160,7 +11488,9 @@
                                           }
                                         },
                                         "additionalProperties": false,
-                                        "required": ["sql"]
+                                        "required": [
+                                          "sql"
+                                        ]
                                       }
                                     },
                                     "quoting": {
@@ -11215,7 +11545,11 @@
                                       "default": "ignore"
                                     },
                                     "on_configuration_change": {
-                                      "enum": ["apply", "continue", "fail"]
+                                      "enum": [
+                                        "apply",
+                                        "continue",
+                                        "fail"
+                                      ]
                                     },
                                     "grants": {
                                       "type": "object",
@@ -11374,7 +11708,10 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["name", "checksum"]
+                      "required": [
+                        "name",
+                        "checksum"
+                      ]
                     },
                     "config": {
                       "type": "object",
@@ -11509,7 +11846,9 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["sql"]
+                            "required": [
+                              "sql"
+                            ]
                           }
                         },
                         "pre-hook": {
@@ -11538,7 +11877,9 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["sql"]
+                            "required": [
+                              "sql"
+                            ]
                           }
                         },
                         "quoting": {
@@ -11593,7 +11934,11 @@
                           "default": "ignore"
                         },
                         "on_configuration_change": {
-                          "enum": ["apply", "continue", "fail"]
+                          "enum": [
+                            "apply",
+                            "continue",
+                            "fail"
+                          ]
                         },
                         "grants": {
                           "type": "object",
@@ -11758,7 +12103,9 @@
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["type"]
+                              "required": [
+                                "type"
+                              ]
                             }
                           },
                           "quote": {
@@ -11840,7 +12187,9 @@
                           }
                         },
                         "additionalProperties": true,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       },
                       "propertyNames": {
                         "type": "string"
@@ -11989,7 +12338,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       }
                     },
                     "sources": {
@@ -12073,7 +12424,10 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["id", "sql"]
+                        "required": [
+                          "id",
+                          "sql"
+                        ]
                       }
                     },
                     "_pre_injected_sql": {
@@ -12185,7 +12539,10 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["name", "checksum"]
+                      "required": [
+                        "name",
+                        "checksum"
+                      ]
                     },
                     "config": {
                       "type": "object",
@@ -12437,7 +12794,9 @@
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["type"]
+                              "required": [
+                                "type"
+                              ]
                             }
                           },
                           "quote": {
@@ -12519,7 +12878,9 @@
                           }
                         },
                         "additionalProperties": true,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       },
                       "propertyNames": {
                         "type": "string"
@@ -12668,7 +13029,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       }
                     },
                     "sources": {
@@ -12752,7 +13115,10 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["id", "sql"]
+                        "required": [
+                          "id",
+                          "sql"
+                        ]
                       }
                     },
                     "_pre_injected_sql": {
@@ -12864,7 +13230,10 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["name", "checksum"]
+                      "required": [
+                        "name",
+                        "checksum"
+                      ]
                     },
                     "config": {
                       "type": "object",
@@ -12999,7 +13368,9 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["sql"]
+                            "required": [
+                              "sql"
+                            ]
                           }
                         },
                         "pre-hook": {
@@ -13028,7 +13399,9 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["sql"]
+                            "required": [
+                              "sql"
+                            ]
                           }
                         },
                         "quoting": {
@@ -13083,7 +13456,11 @@
                           "default": "ignore"
                         },
                         "on_configuration_change": {
-                          "enum": ["apply", "continue", "fail"]
+                          "enum": [
+                            "apply",
+                            "continue",
+                            "fail"
+                          ]
                         },
                         "grants": {
                           "type": "object",
@@ -13248,7 +13625,9 @@
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["type"]
+                              "required": [
+                                "type"
+                              ]
                             }
                           },
                           "quote": {
@@ -13330,7 +13709,9 @@
                           }
                         },
                         "additionalProperties": true,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       },
                       "propertyNames": {
                         "type": "string"
@@ -13479,7 +13860,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       }
                     },
                     "sources": {
@@ -13563,7 +13946,10 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["id", "sql"]
+                        "required": [
+                          "id",
+                          "sql"
+                        ]
                       }
                     },
                     "_pre_injected_sql": {
@@ -13686,7 +14072,10 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["name", "checksum"]
+                      "required": [
+                        "name",
+                        "checksum"
+                      ]
                     },
                     "config": {
                       "type": "object",
@@ -13821,7 +14210,9 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["sql"]
+                            "required": [
+                              "sql"
+                            ]
                           }
                         },
                         "pre-hook": {
@@ -13850,7 +14241,9 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["sql"]
+                            "required": [
+                              "sql"
+                            ]
                           }
                         },
                         "quoting": {
@@ -13905,7 +14298,11 @@
                           "default": "ignore"
                         },
                         "on_configuration_change": {
-                          "enum": ["apply", "continue", "fail"]
+                          "enum": [
+                            "apply",
+                            "continue",
+                            "fail"
+                          ]
                         },
                         "grants": {
                           "type": "object",
@@ -13963,7 +14360,11 @@
                           "default": null
                         },
                         "access": {
-                          "enum": ["private", "protected", "public"],
+                          "enum": [
+                            "private",
+                            "protected",
+                            "public"
+                          ],
                           "default": "protected"
                         },
                         "freshness": {
@@ -13976,23 +14377,35 @@
                                   "type": "object",
                                   "title": "ModelBuildAfter",
                                   "properties": {
-                                    "updates_on": {
-                                      "enum": ["all", "any"],
-                                      "default": "any"
-                                    },
                                     "count": {
-                                      "type": "integer",
-                                      "default": 0
+                                      "type": "integer"
                                     },
                                     "period": {
-                                      "enum": ["minute", "hour", "day"],
-                                      "default": "hour"
+                                      "enum": [
+                                        "minute",
+                                        "hour",
+                                        "day"
+                                      ]
+                                    },
+                                    "updates_on": {
+                                      "enum": [
+                                        "all",
+                                        "any"
+                                      ],
+                                      "default": "any"
                                     }
                                   },
-                                  "additionalProperties": true
+                                  "additionalProperties": true,
+                                  "required": [
+                                    "count",
+                                    "period"
+                                  ]
                                 }
                               },
-                              "additionalProperties": true
+                              "additionalProperties": true,
+                              "required": [
+                                "build_after"
+                              ]
                             },
                             {
                               "type": "null"
@@ -14108,7 +14521,9 @@
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["type"]
+                              "required": [
+                                "type"
+                              ]
                             }
                           },
                           "quote": {
@@ -14190,7 +14605,9 @@
                           }
                         },
                         "additionalProperties": true,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       },
                       "propertyNames": {
                         "type": "string"
@@ -14339,7 +14756,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       }
                     },
                     "sources": {
@@ -14423,7 +14842,10 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["id", "sql"]
+                        "required": [
+                          "id",
+                          "sql"
+                        ]
                       }
                     },
                     "_pre_injected_sql": {
@@ -14464,7 +14886,11 @@
                       "additionalProperties": false
                     },
                     "access": {
-                      "enum": ["private", "protected", "public"],
+                      "enum": [
+                        "private",
+                        "protected",
+                        "public"
+                      ],
                       "default": "protected"
                     },
                     "constraints": {
@@ -14538,7 +14964,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["type"]
+                        "required": [
+                          "type"
+                        ]
                       }
                     },
                     "version": {
@@ -14797,7 +15225,9 @@
                                           }
                                         },
                                         "additionalProperties": false,
-                                        "required": ["sql"]
+                                        "required": [
+                                          "sql"
+                                        ]
                                       }
                                     },
                                     "pre-hook": {
@@ -14826,7 +15256,9 @@
                                           }
                                         },
                                         "additionalProperties": false,
-                                        "required": ["sql"]
+                                        "required": [
+                                          "sql"
+                                        ]
                                       }
                                     },
                                     "quoting": {
@@ -14881,7 +15313,11 @@
                                       "default": "ignore"
                                     },
                                     "on_configuration_change": {
-                                      "enum": ["apply", "continue", "fail"]
+                                      "enum": [
+                                        "apply",
+                                        "continue",
+                                        "fail"
+                                      ]
                                     },
                                     "grants": {
                                       "type": "object",
@@ -15005,46 +15441,16 @@
                                   }
                                 },
                                 "additionalProperties": false,
-                                "required": ["name"]
+                                "required": [
+                                  "name"
+                                ]
                               }
                             }
                           },
                           "additionalProperties": false,
-                          "required": ["standard_granularity_column"]
-                        },
-                        {
-                          "type": "null"
-                        }
-                      ],
-                      "default": null
-                    },
-                    "freshness": {
-                      "anyOf": [
-                        {
-                          "type": "object",
-                          "title": "ModelFreshness",
-                          "properties": {
-                            "build_after": {
-                              "type": "object",
-                              "title": "ModelBuildAfter",
-                              "properties": {
-                                "updates_on": {
-                                  "enum": ["all", "any"],
-                                  "default": "any"
-                                },
-                                "count": {
-                                  "type": "integer",
-                                  "default": 0
-                                },
-                                "period": {
-                                  "enum": ["minute", "hour", "day"],
-                                  "default": "hour"
-                                }
-                              },
-                              "additionalProperties": true
-                            }
-                          },
-                          "additionalProperties": true
+                          "required": [
+                            "standard_granularity_column"
+                          ]
                         },
                         {
                           "type": "null"
@@ -15124,7 +15530,10 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["name", "checksum"]
+                      "required": [
+                        "name",
+                        "checksum"
+                      ]
                     },
                     "config": {
                       "type": "object",
@@ -15259,7 +15668,9 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["sql"]
+                            "required": [
+                              "sql"
+                            ]
                           }
                         },
                         "pre-hook": {
@@ -15288,7 +15699,9 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["sql"]
+                            "required": [
+                              "sql"
+                            ]
                           }
                         },
                         "quoting": {
@@ -15343,7 +15756,11 @@
                           "default": "ignore"
                         },
                         "on_configuration_change": {
-                          "enum": ["apply", "continue", "fail"]
+                          "enum": [
+                            "apply",
+                            "continue",
+                            "fail"
+                          ]
                         },
                         "grants": {
                           "type": "object",
@@ -15508,7 +15925,9 @@
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["type"]
+                              "required": [
+                                "type"
+                              ]
                             }
                           },
                           "quote": {
@@ -15590,7 +16009,9 @@
                           }
                         },
                         "additionalProperties": true,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       },
                       "propertyNames": {
                         "type": "string"
@@ -15739,7 +16160,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       }
                     },
                     "sources": {
@@ -15823,7 +16246,10 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["id", "sql"]
+                        "required": [
+                          "id",
+                          "sql"
+                        ]
                       }
                     },
                     "_pre_injected_sql": {
@@ -15935,7 +16361,10 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["name", "checksum"]
+                      "required": [
+                        "name",
+                        "checksum"
+                      ]
                     },
                     "config": {
                       "type": "object",
@@ -16187,7 +16616,9 @@
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["type"]
+                              "required": [
+                                "type"
+                              ]
                             }
                           },
                           "quote": {
@@ -16269,7 +16700,9 @@
                           }
                         },
                         "additionalProperties": true,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       },
                       "propertyNames": {
                         "type": "string"
@@ -16418,7 +16851,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       }
                     },
                     "sources": {
@@ -16502,7 +16937,10 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["id", "sql"]
+                        "required": [
+                          "id",
+                          "sql"
+                        ]
                       }
                     },
                     "_pre_injected_sql": {
@@ -16675,7 +17113,10 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["name", "checksum"]
+                      "required": [
+                        "name",
+                        "checksum"
+                      ]
                     },
                     "config": {
                       "type": "object",
@@ -16810,7 +17251,9 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["sql"]
+                            "required": [
+                              "sql"
+                            ]
                           }
                         },
                         "pre-hook": {
@@ -16839,7 +17282,9 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["sql"]
+                            "required": [
+                              "sql"
+                            ]
                           }
                         },
                         "quoting": {
@@ -16894,7 +17339,11 @@
                           "default": "ignore"
                         },
                         "on_configuration_change": {
-                          "enum": ["apply", "continue", "fail"]
+                          "enum": [
+                            "apply",
+                            "continue",
+                            "fail"
+                          ]
                         },
                         "grants": {
                           "type": "object",
@@ -17193,7 +17642,9 @@
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["type"]
+                              "required": [
+                                "type"
+                              ]
                             }
                           },
                           "quote": {
@@ -17275,7 +17726,9 @@
                           }
                         },
                         "additionalProperties": true,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       },
                       "propertyNames": {
                         "type": "string"
@@ -17424,7 +17877,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       }
                     },
                     "sources": {
@@ -17508,7 +17963,10 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["id", "sql"]
+                        "required": [
+                          "id",
+                          "sql"
+                        ]
                       }
                     },
                     "_pre_injected_sql": {
@@ -17765,7 +18223,9 @@
                                           }
                                         },
                                         "additionalProperties": false,
-                                        "required": ["sql"]
+                                        "required": [
+                                          "sql"
+                                        ]
                                       }
                                     },
                                     "pre-hook": {
@@ -17794,7 +18254,9 @@
                                           }
                                         },
                                         "additionalProperties": false,
-                                        "required": ["sql"]
+                                        "required": [
+                                          "sql"
+                                        ]
                                       }
                                     },
                                     "quoting": {
@@ -17849,7 +18311,11 @@
                                       "default": "ignore"
                                     },
                                     "on_configuration_change": {
-                                      "enum": ["apply", "continue", "fail"]
+                                      "enum": [
+                                        "apply",
+                                        "continue",
+                                        "fail"
+                                      ]
                                     },
                                     "grants": {
                                       "type": "object",
@@ -18105,7 +18571,11 @@
                                     "period": {
                                       "anyOf": [
                                         {
-                                          "enum": ["minute", "hour", "day"]
+                                          "enum": [
+                                            "minute",
+                                            "hour",
+                                            "day"
+                                          ]
                                         },
                                         {
                                           "type": "null"
@@ -18141,7 +18611,11 @@
                                     "period": {
                                       "anyOf": [
                                         {
-                                          "enum": ["minute", "hour", "day"]
+                                          "enum": [
+                                            "minute",
+                                            "hour",
+                                            "day"
+                                          ]
                                         },
                                         {
                                           "type": "null"
@@ -18389,7 +18863,9 @@
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["type"]
+                              "required": [
+                                "type"
+                              ]
                             }
                           },
                           "quote": {
@@ -18471,7 +18947,9 @@
                           }
                         },
                         "additionalProperties": true,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       },
                       "propertyNames": {
                         "type": "string"
@@ -18538,7 +19016,11 @@
                                         "period": {
                                           "anyOf": [
                                             {
-                                              "enum": ["minute", "hour", "day"]
+                                              "enum": [
+                                                "minute",
+                                                "hour",
+                                                "day"
+                                              ]
                                             },
                                             {
                                               "type": "null"
@@ -18574,7 +19056,11 @@
                                         "period": {
                                           "anyOf": [
                                             {
-                                              "enum": ["minute", "hour", "day"]
+                                              "enum": [
+                                                "minute",
+                                                "hour",
+                                                "day"
+                                              ]
                                             },
                                             {
                                               "type": "null"
@@ -18607,8 +19093,41 @@
                             {
                               "type": "null"
                             }
+                          ]
+                        },
+                        "loaded_at_field": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "null"
+                            }
                           ],
                           "default": null
+                        },
+                        "loaded_at_query": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ],
+                          "default": null
+                        },
+                        "meta": {
+                          "type": "object",
+                          "propertyNames": {
+                            "type": "string"
+                          }
+                        },
+                        "tags": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
                         }
                       },
                       "additionalProperties": true
@@ -18786,7 +19305,11 @@
                     "maturity": {
                       "anyOf": [
                         {
-                          "enum": ["low", "medium", "high"]
+                          "enum": [
+                            "low",
+                            "medium",
+                            "high"
+                          ]
                         },
                         {
                           "type": "null"
@@ -18907,7 +19430,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       }
                     },
                     "sources": {
@@ -19018,12 +19543,16 @@
                                               }
                                             },
                                             "additionalProperties": false,
-                                            "required": ["where_sql_template"]
+                                            "required": [
+                                              "where_sql_template"
+                                            ]
                                           }
                                         }
                                       },
                                       "additionalProperties": false,
-                                      "required": ["where_filters"]
+                                      "required": [
+                                        "where_filters"
+                                      ]
                                     },
                                     {
                                       "type": "null"
@@ -19059,7 +19588,9 @@
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["name"]
+                              "required": [
+                                "name"
+                              ]
                             },
                             {
                               "type": "null"
@@ -19093,12 +19624,16 @@
                                             }
                                           },
                                           "additionalProperties": false,
-                                          "required": ["where_sql_template"]
+                                          "required": [
+                                            "where_sql_template"
+                                          ]
                                         }
                                       }
                                     },
                                     "additionalProperties": false,
-                                    "required": ["where_filters"]
+                                    "required": [
+                                      "where_filters"
+                                    ]
                                   },
                                   {
                                     "type": "null"
@@ -19134,7 +19669,9 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["name"]
+                            "required": [
+                              "name"
+                            ]
                           }
                         },
                         "numerator": {
@@ -19163,12 +19700,16 @@
                                               }
                                             },
                                             "additionalProperties": false,
-                                            "required": ["where_sql_template"]
+                                            "required": [
+                                              "where_sql_template"
+                                            ]
                                           }
                                         }
                                       },
                                       "additionalProperties": false,
-                                      "required": ["where_filters"]
+                                      "required": [
+                                        "where_filters"
+                                      ]
                                     },
                                     {
                                       "type": "null"
@@ -19201,7 +19742,10 @@
                                         }
                                       },
                                       "additionalProperties": false,
-                                      "required": ["count", "granularity"]
+                                      "required": [
+                                        "count",
+                                        "granularity"
+                                      ]
                                     },
                                     {
                                       "type": "null"
@@ -19222,7 +19766,9 @@
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["name"]
+                              "required": [
+                                "name"
+                              ]
                             },
                             {
                               "type": "null"
@@ -19256,12 +19802,16 @@
                                               }
                                             },
                                             "additionalProperties": false,
-                                            "required": ["where_sql_template"]
+                                            "required": [
+                                              "where_sql_template"
+                                            ]
                                           }
                                         }
                                       },
                                       "additionalProperties": false,
-                                      "required": ["where_filters"]
+                                      "required": [
+                                        "where_filters"
+                                      ]
                                     },
                                     {
                                       "type": "null"
@@ -19294,7 +19844,10 @@
                                         }
                                       },
                                       "additionalProperties": false,
-                                      "required": ["count", "granularity"]
+                                      "required": [
+                                        "count",
+                                        "granularity"
+                                      ]
                                     },
                                     {
                                       "type": "null"
@@ -19315,7 +19868,9 @@
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["name"]
+                              "required": [
+                                "name"
+                              ]
                             },
                             {
                               "type": "null"
@@ -19348,7 +19903,10 @@
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["count", "granularity"]
+                              "required": [
+                                "count",
+                                "granularity"
+                              ]
                             },
                             {
                               "type": "null"
@@ -19407,12 +19965,16 @@
                                                 }
                                               },
                                               "additionalProperties": false,
-                                              "required": ["where_sql_template"]
+                                              "required": [
+                                                "where_sql_template"
+                                              ]
                                             }
                                           }
                                         },
                                         "additionalProperties": false,
-                                        "required": ["where_filters"]
+                                        "required": [
+                                          "where_filters"
+                                        ]
                                       },
                                       {
                                         "type": "null"
@@ -19445,7 +20007,10 @@
                                           }
                                         },
                                         "additionalProperties": false,
-                                        "required": ["count", "granularity"]
+                                        "required": [
+                                          "count",
+                                          "granularity"
+                                        ]
                                       },
                                       {
                                         "type": "null"
@@ -19466,7 +20031,9 @@
                                   }
                                 },
                                 "additionalProperties": false,
-                                "required": ["name"]
+                                "required": [
+                                  "name"
+                                ]
                               }
                             },
                             {
@@ -19512,7 +20079,9 @@
                                             }
                                           },
                                           "additionalProperties": false,
-                                          "required": ["where_filters"]
+                                          "required": [
+                                            "where_filters"
+                                          ]
                                         },
                                         {
                                           "type": "null"
@@ -19548,7 +20117,9 @@
                                     }
                                   },
                                   "additionalProperties": false,
-                                  "required": ["name"]
+                                  "required": [
+                                    "name"
+                                  ]
                                 },
                                 "conversion_measure": {
                                   "type": "object",
@@ -19581,7 +20152,9 @@
                                             }
                                           },
                                           "additionalProperties": false,
-                                          "required": ["where_filters"]
+                                          "required": [
+                                            "where_filters"
+                                          ]
                                         },
                                         {
                                           "type": "null"
@@ -19617,13 +20190,18 @@
                                     }
                                   },
                                   "additionalProperties": false,
-                                  "required": ["name"]
+                                  "required": [
+                                    "name"
+                                  ]
                                 },
                                 "entity": {
                                   "type": "string"
                                 },
                                 "calculation": {
-                                  "enum": ["conversions", "conversion_rate"],
+                                  "enum": [
+                                    "conversions",
+                                    "conversion_rate"
+                                  ],
                                   "default": "conversion_rate"
                                 },
                                 "window": {
@@ -19640,7 +20218,10 @@
                                         }
                                       },
                                       "additionalProperties": false,
-                                      "required": ["count", "granularity"]
+                                      "required": [
+                                        "count",
+                                        "granularity"
+                                      ]
                                     },
                                     {
                                       "type": "null"
@@ -19710,7 +20291,10 @@
                                         }
                                       },
                                       "additionalProperties": false,
-                                      "required": ["count", "granularity"]
+                                      "required": [
+                                        "count",
+                                        "granularity"
+                                      ]
                                     },
                                     {
                                       "type": "null"
@@ -19730,7 +20314,11 @@
                                   "default": null
                                 },
                                 "period_agg": {
-                                  "enum": ["first", "last", "average"],
+                                  "enum": [
+                                    "first",
+                                    "last",
+                                    "average"
+                                  ],
                                   "default": "first"
                                 }
                               },
@@ -19762,12 +20350,16 @@
                                   }
                                 },
                                 "additionalProperties": false,
-                                "required": ["where_sql_template"]
+                                "required": [
+                                  "where_sql_template"
+                                ]
                               }
                             }
                           },
                           "additionalProperties": false,
-                          "required": ["where_filters"]
+                          "required": [
+                            "where_filters"
+                          ]
                         },
                         {
                           "type": "null"
@@ -19811,7 +20403,10 @@
                             }
                           },
                           "additionalProperties": false,
-                          "required": ["repo_file_path", "file_slice"]
+                          "required": [
+                            "repo_file_path",
+                            "file_slice"
+                          ]
                         },
                         {
                           "type": "null"
@@ -19946,7 +20541,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       }
                     },
                     "metrics": {
@@ -20049,12 +20646,16 @@
                                       }
                                     },
                                     "additionalProperties": false,
-                                    "required": ["where_sql_template"]
+                                    "required": [
+                                      "where_sql_template"
+                                    ]
                                   }
                                 }
                               },
                               "additionalProperties": false,
-                              "required": ["where_filters"]
+                              "required": [
+                                "where_filters"
+                              ]
                             },
                             {
                               "type": "null"
@@ -20080,7 +20681,11 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["metrics", "group_by", "where"]
+                      "required": [
+                        "metrics",
+                        "group_by",
+                        "where"
+                      ]
                     },
                     "exports": {
                       "type": "array",
@@ -20096,7 +20701,10 @@
                             "title": "ExportConfig",
                             "properties": {
                               "export_as": {
-                                "enum": ["table", "view"]
+                                "enum": [
+                                  "table",
+                                  "view"
+                                ]
                               },
                               "schema_name": {
                                 "anyOf": [
@@ -20133,7 +20741,9 @@
                               }
                             },
                             "additionalProperties": false,
-                            "required": ["export_as"]
+                            "required": [
+                              "export_as"
+                            ]
                           },
                           "unrendered_config": {
                             "type": "object",
@@ -20146,7 +20756,10 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name", "config"]
+                        "required": [
+                          "name",
+                          "config"
+                        ]
                       }
                     },
                     "description": {
@@ -20207,7 +20820,10 @@
                             }
                           },
                           "additionalProperties": false,
-                          "required": ["repo_file_path", "file_slice"]
+                          "required": [
+                            "repo_file_path",
+                            "file_slice"
+                          ]
                         },
                         {
                           "type": "null"
@@ -20249,7 +20865,10 @@
                         "export_as": {
                           "anyOf": [
                             {
-                              "enum": ["table", "view"]
+                              "enum": [
+                                "table",
+                                "view"
+                              ]
                             },
                             {
                               "type": "null"
@@ -20357,7 +20976,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       }
                     },
                     "tags": {
@@ -20473,7 +21094,10 @@
                             }
                           },
                           "additionalProperties": false,
-                          "required": ["alias", "schema_name"]
+                          "required": [
+                            "alias",
+                            "schema_name"
+                          ]
                         },
                         {
                           "type": "null"
@@ -20538,7 +21162,12 @@
                             "type": "string"
                           },
                           "type": {
-                            "enum": ["foreign", "natural", "primary", "unique"]
+                            "enum": [
+                              "foreign",
+                              "natural",
+                              "primary",
+                              "unique"
+                            ]
                           },
                           "description": {
                             "anyOf": [
@@ -20607,7 +21236,10 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name", "type"]
+                        "required": [
+                          "name",
+                          "type"
+                        ]
                       }
                     },
                     "measures": {
@@ -20779,7 +21411,10 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name", "agg"]
+                        "required": [
+                          "name",
+                          "agg"
+                        ]
                       }
                     },
                     "dimensions": {
@@ -20792,7 +21427,10 @@
                             "type": "string"
                           },
                           "type": {
-                            "enum": ["categorical", "time"]
+                            "enum": [
+                              "categorical",
+                              "time"
+                            ]
                           },
                           "description": {
                             "anyOf": [
@@ -20866,7 +21504,9 @@
                                   }
                                 },
                                 "additionalProperties": false,
-                                "required": ["time_granularity"]
+                                "required": [
+                                  "time_granularity"
+                                ]
                               },
                               {
                                 "type": "null"
@@ -20921,7 +21561,10 @@
                                   }
                                 },
                                 "additionalProperties": false,
-                                "required": ["repo_file_path", "file_slice"]
+                                "required": [
+                                  "repo_file_path",
+                                  "file_slice"
+                                ]
                               },
                               {
                                 "type": "null"
@@ -20952,7 +21595,10 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name", "type"]
+                        "required": [
+                          "name",
+                          "type"
+                        ]
                       }
                     },
                     "metadata": {
@@ -20991,7 +21637,10 @@
                             }
                           },
                           "additionalProperties": false,
-                          "required": ["repo_file_path", "file_slice"]
+                          "required": [
+                            "repo_file_path",
+                            "file_slice"
+                          ]
                         },
                         {
                           "type": "null"
@@ -21054,7 +21703,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["name"]
+                        "required": [
+                          "name"
+                        ]
                       }
                     },
                     "created_at": {
@@ -21173,7 +21824,11 @@
                             "default": null
                           },
                           "format": {
-                            "enum": ["csv", "dict", "sql"],
+                            "enum": [
+                              "csv",
+                              "dict",
+                              "sql"
+                            ],
                             "default": "dict"
                           },
                           "fixture": {
@@ -21189,7 +21844,9 @@
                           }
                         },
                         "additionalProperties": false,
-                        "required": ["input"]
+                        "required": [
+                          "input"
+                        ]
                       }
                     },
                     "expect": {
@@ -21217,7 +21874,11 @@
                           "default": null
                         },
                         "format": {
-                          "enum": ["csv", "dict", "sql"],
+                          "enum": [
+                            "csv",
+                            "dict",
+                            "sql"
+                          ],
                           "default": "dict"
                         },
                         "fixture": {
@@ -21616,12 +22277,16 @@
                             }
                           },
                           "additionalProperties": false,
-                          "required": ["where_sql_template"]
+                          "required": [
+                            "where_sql_template"
+                          ]
                         }
                       }
                     },
                     "additionalProperties": false,
-                    "required": ["where_filters"]
+                    "required": [
+                      "where_filters"
+                    ]
                   },
                   {
                     "type": "null"
@@ -21647,7 +22312,11 @@
               }
             },
             "additionalProperties": false,
-            "required": ["metrics", "group_by", "where"]
+            "required": [
+              "metrics",
+              "group_by",
+              "where"
+            ]
           },
           "exports": {
             "type": "array",
@@ -21663,7 +22332,10 @@
                   "title": "ExportConfig",
                   "properties": {
                     "export_as": {
-                      "enum": ["table", "view"]
+                      "enum": [
+                        "table",
+                        "view"
+                      ]
                     },
                     "schema_name": {
                       "anyOf": [
@@ -21700,7 +22372,9 @@
                     }
                   },
                   "additionalProperties": false,
-                  "required": ["export_as"]
+                  "required": [
+                    "export_as"
+                  ]
                 },
                 "unrendered_config": {
                   "type": "object",
@@ -21713,7 +22387,10 @@
                 }
               },
               "additionalProperties": false,
-              "required": ["name", "config"]
+              "required": [
+                "name",
+                "config"
+              ]
             }
           },
           "description": {
@@ -21774,7 +22451,10 @@
                   }
                 },
                 "additionalProperties": false,
-                "required": ["repo_file_path", "file_slice"]
+                "required": [
+                  "repo_file_path",
+                  "file_slice"
+                ]
               },
               {
                 "type": "null"
@@ -21816,7 +22496,10 @@
               "export_as": {
                 "anyOf": [
                   {
-                    "enum": ["table", "view"]
+                    "enum": [
+                      "table",
+                      "view"
+                    ]
                   },
                   {
                     "type": "null"
@@ -21924,7 +22607,9 @@
                 }
               },
               "additionalProperties": false,
-              "required": ["name"]
+              "required": [
+                "name"
+              ]
             }
           },
           "tags": {
@@ -22047,7 +22732,10 @@
                   }
                 },
                 "additionalProperties": false,
-                "required": ["alias", "schema_name"]
+                "required": [
+                  "alias",
+                  "schema_name"
+                ]
               },
               {
                 "type": "null"
@@ -22112,7 +22800,12 @@
                   "type": "string"
                 },
                 "type": {
-                  "enum": ["foreign", "natural", "primary", "unique"]
+                  "enum": [
+                    "foreign",
+                    "natural",
+                    "primary",
+                    "unique"
+                  ]
                 },
                 "description": {
                   "anyOf": [
@@ -22181,7 +22874,10 @@
                 }
               },
               "additionalProperties": false,
-              "required": ["name", "type"]
+              "required": [
+                "name",
+                "type"
+              ]
             }
           },
           "measures": {
@@ -22307,7 +23003,11 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["name", "window_choice", "window_groupings"]
+                      "required": [
+                        "name",
+                        "window_choice",
+                        "window_groupings"
+                      ]
                     },
                     {
                       "type": "null"
@@ -22349,7 +23049,10 @@
                 }
               },
               "additionalProperties": false,
-              "required": ["name", "agg"]
+              "required": [
+                "name",
+                "agg"
+              ]
             }
           },
           "dimensions": {
@@ -22362,7 +23065,10 @@
                   "type": "string"
                 },
                 "type": {
-                  "enum": ["categorical", "time"]
+                  "enum": [
+                    "categorical",
+                    "time"
+                  ]
                 },
                 "description": {
                   "anyOf": [
@@ -22436,7 +23142,9 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["time_granularity"]
+                      "required": [
+                        "time_granularity"
+                      ]
                     },
                     {
                       "type": "null"
@@ -22491,7 +23199,10 @@
                         }
                       },
                       "additionalProperties": false,
-                      "required": ["repo_file_path", "file_slice"]
+                      "required": [
+                        "repo_file_path",
+                        "file_slice"
+                      ]
                     },
                     {
                       "type": "null"
@@ -22522,7 +23233,10 @@
                 }
               },
               "additionalProperties": false,
-              "required": ["name", "type"]
+              "required": [
+                "name",
+                "type"
+              ]
             }
           },
           "metadata": {
@@ -22561,7 +23275,10 @@
                   }
                 },
                 "additionalProperties": false,
-                "required": ["repo_file_path", "file_slice"]
+                "required": [
+                  "repo_file_path",
+                  "file_slice"
+                ]
               },
               {
                 "type": "null"
@@ -22624,7 +23341,9 @@
                 }
               },
               "additionalProperties": false,
-              "required": ["name"]
+              "required": [
+                "name"
+              ]
             }
           },
           "created_at": {
@@ -22750,7 +23469,11 @@
                   "default": null
                 },
                 "format": {
-                  "enum": ["csv", "dict", "sql"],
+                  "enum": [
+                    "csv",
+                    "dict",
+                    "sql"
+                  ],
                   "default": "dict"
                 },
                 "fixture": {
@@ -22766,7 +23489,9 @@
                 }
               },
               "additionalProperties": false,
-              "required": ["input"]
+              "required": [
+                "input"
+              ]
             }
           },
           "expect": {
@@ -22794,7 +23519,11 @@
                 "default": null
               },
               "format": {
-                "enum": ["csv", "dict", "sql"],
+                "enum": [
+                  "csv",
+                  "dict",
+                  "sql"
+                ],
                 "default": "dict"
               },
               "fixture": {
